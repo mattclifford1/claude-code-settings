@@ -1,6 +1,6 @@
 # LM studio
 
-on machine
+on machine start from the GUI or run the command
 ```
 lms server start --port 1234
 ```
