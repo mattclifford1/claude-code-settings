@@ -15,3 +15,6 @@ run
 ```
 claude --model qwen/qwen3-coder-30b
 ```
+
+## daemon
+edit at `/etc/systemd/system/lmstudio.service`
