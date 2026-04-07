@@ -1,3 +1,15 @@
+# Local LLM quick start
+Turn on desktop and ssh in
+```bash
+inference-mode
+```
+open lm studio on laptop and wait to make sure desktop is connected then launch attached to local model
+```bash
+export ANTHROPIC_BASE_URL=http://localhost:1234
+export ANTHROPIC_AUTH_TOKEN=lmstudio
+claude --model google/gemma-4-31b
+```
+
 # LM Studio Setup
 
 Machine: AMD 5950x, NVIDIA RTX 3090 (24 GB VRAM), Ubuntu with GDM/GNOME desktop, no iGPU.
@@ -30,7 +42,7 @@ Set environment variables then run Claude:
 ```bash
 export ANTHROPIC_BASE_URL=http://localhost:1234
 export ANTHROPIC_AUTH_TOKEN=lmstudio
-claude --model qwen/qwen3-coder-30b
+claude --model google/gemma-4-31b
 ```
 
 ---
