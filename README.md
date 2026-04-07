@@ -2,6 +2,22 @@
 
 Machine: AMD 5950x, NVIDIA RTX 3090 (24 GB VRAM), Ubuntu with GDM/GNOME desktop, no iGPU.
 
+## LM Studio daemon setup
+edit at `/etc/systemd/system/lmstudio.service` and follow the start stop etc. on https://lmstudio.ai/docs/developer/core/headless_llmster
+
+Most importantly to start
+```
+sudo systemctl daemon-reload
+sudo systemctl enable lmstudio.service
+sudo systemctl start lmstudio.service
+```
+
+If you need to disable
+```
+# Disable auto-start
+sudo systemctl disable lmstudio
+```
+
 ---
 
 ## Using Claude Code with LM Studio
