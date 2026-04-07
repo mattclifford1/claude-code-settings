@@ -2,7 +2,10 @@
 
 Machine: AMD 5950x, NVIDIA RTX 3090 (24 GB VRAM), Ubuntu with GDM/GNOME desktop, no iGPU.
 
-## LM Studio daemon setup
+## LM Studio daemon setup (for auto start on power up)
+Only use this for convinence if you dont care about the inference-mode describes below which gets you more VRAM
+
+### setup
 edit at `/etc/systemd/system/lmstudio.service` and follow the start stop etc. on https://lmstudio.ai/docs/developer/core/headless_llmster
 
 Most importantly to start
@@ -11,7 +14,7 @@ sudo systemctl daemon-reload
 sudo systemctl enable lmstudio.service
 sudo systemctl start lmstudio.service
 ```
-
+### disable
 If you need to disable
 ```
 # Disable auto-start
