@@ -7,6 +7,9 @@ open lm studio on laptop and wait to make sure desktop is connected then launch 
 ```bash
 export ANTHROPIC_BASE_URL=http://localhost:1234
 export ANTHROPIC_AUTH_TOKEN=lmstudio
+
+claude --model lmstudio-community/gemma-4-26b-a4b-it
+# or 
 claude --model lmstudio-community/gemma-4-31b-it
 ```
 
